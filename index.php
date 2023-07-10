@@ -1,6 +1,6 @@
 <?php
 
-$db = new PDO("mysql:host=localhost;dbname=mydb", "root", "");
+$db = new PDO("mysql:host=localhost;dbname=mydb;charset=utf8mb4", "root", "");
 
 $phrases = $_POST["phrases"];
 
