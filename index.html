@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulario de contacto</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-<nav>
-  <div class="nav-container">
-    <h3 onclick="refreshPage()" class="button">Tabla de Datos</h3>
-    <div class="button-container">
-      <button id="sobre-mi-btn"><span></span>Sobre mi</button>
-      <button onclick="downloadFile()"><span></span>Codigo</button>
-      <button id="temas-btn"><span></span>Temas</button>
+    <h1>Refranes completamente originales</h1>
+    <div id="merged-phrase">
+        <h3>Su refran original se vera reflejado aqui</h3>
     </div>
-  </div>
-</nav>
 
-<div id="sobre-mi-content" style="display: none;">
-</div>
+    <div id="phrase-input-container">
+        <input type="text" id="phrase-input" placeholder="Ingrese sus refranes aqui" onkeydown="addPhrase(event)">
+    </div>
 
-<div class="animacion">
-  <div class="container" id="main-content">
-    <h2 class="Titulo">Datos</h2>
-    <form action="enviar.php" method="post">
+    <div class="phrases-container">
+        <h3>Contenedor de refranes</h3>
+    <ul id="phrase-list"></ul>
+    </div>
+    <button id="merge-button" onclick="mergePhrases()">Crear refran</button>
 
-      <label>Nombre:<br> </label>
-      <input class="input-field" type="text" name="nombre">
-      <label>Apellido:<br> </label>
-      <input class="input-field" type="text" name="apellido">
-      <label>Mail:<br> </label>
-      <input class="input-field" type="text" name="mail">
-      <label>Observaciones:<br> </label>
-      <input class="input-field" type="text" name="observaciones">
-      <input class="enviar" type="submit" value="Enviar">
-    
-    </form>
-  </div>
-</div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
