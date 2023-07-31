@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #E6F1FD;
+    overflow: hidden;
 }
 
 #phrase-input-container {
@@ -115,4 +116,9 @@ h3{
     border-radius: 5px;
     cursor: pointer;
     background-color: rgba(206, 206, 206, 0.686)
+}
+
+img{
+    height: 100%;
+    width: 100%;
 }
