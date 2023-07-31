@@ -45,6 +45,19 @@ body {
     cursor: pointer;
 }
 
+#delete-list-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 70px;
+
+}
+
 #phrase-list {
     margin-top: 20px;
     list-style-type: none;
@@ -55,6 +68,7 @@ body {
 
 #phrase-list li {
     margin-bottom: 5px;
+    padding-left: 3px;
 }
 
 #merged-phrase{
@@ -97,5 +111,11 @@ h3{
 
 .phrases-container::-webkit-scrollbar-thumb:horizontal {
     background-color: #888; 
+}
+
+#phrase-list li:hover {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(206, 206, 206, 0.686)
 }
 
