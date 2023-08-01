@@ -9,23 +9,53 @@
 </head>
 
 <body>
-  <img src="https://static.vecteezy.com/system/resources/previews/001/970/338/original/building-under-construction-site-free-vector.jpg" alt="">
-  <h1>Aun no esta terminada</h1>
+  <h1>Refranes completamente originales</h1>
   <div id="merged-phrase">
-    <h3>Su frase original se vera reflejada aqui</h3>
+    <h3>Su refran original se vera reflejado aqui</h3>
   </div>
 
   <div id="phrase-input-container">
-    <input type="text" id="phrase-input" placeholder="Ingrese sus frases aqui" onkeydown="addPhrase(event)">
+    <input type="text" id="phrase-input" placeholder="Ingrese sus refranes aqui" onkeydown="addPhrase(event)">
   </div>
 
   <div class="phrases-container">
-    <h3>Contenedor de frases comunitario</h3>
+    <h3>Contenedor de refranes</h3>
     <ul id="phrase-list" onclick="deleteNextPhrase(event)"></ul>
   </div>
   <div>
-    <button id="merge-button" onclick="mergePhrases()">Crear frase nueva</button>
-    <button id="delete-list-button" onclick="deleteList()">Borrar frase</button>
+    <button id="merge-button" onclick="mergePhrases()">Crear refran</button>
+    <button id="delete-list-button" onclick="deleteList()">Borrar Frase</button>
+  </div>
+
+  <button id="showDivsButton">Como usar</button>
+  <div id="divContainer">
+    <h1>Reglas Y Manual De Uso</h1>
+
+
+    <div class="grid-container">
+      <div class="coloredDiv">
+        <p>1.<br> Primero, ingresas las palabras en la caja, asegúrate de que tengan una coma (ejemplo: perro que ladra,
+          no muerde) y le das a la tecla "Enter" para guardarlas en la base de datos</p>
+      </div>
+      <div class="coloredDiv">
+        <p>2.<br> Una vez que tenemos dos o más palabras almacenadas en nuestro contenedor, le daremos al botón "Generar
+          refrán", y este generará un refrán aleatorio en base a los refranes en la base de datos</p>
+      </div>
+      <div class="coloredDiv">
+        <p>3.<br> Para poder borrar un refrán de nuestra base de datos, le daremos click al botón "Borrar refrán" y
+          luego le daremos click al refrán a borrar</p>
+      </div>
+      <div class="coloredDiv">
+        <p>4
+        <h3>Por favor:</h3>
+        No utilizar malas palabras<br>
+        No borrar toda la base de datos <br>
+        No abusar de errores<br>
+        Y más importante, ¡diviértanse!</p>
+      </div>
+    </div>
+    <button id="closeButton">Cerrar</button>
+
   </div>
 
   <script src="script.js"></script>

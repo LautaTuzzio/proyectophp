@@ -3,8 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E6F1FD;
-    overflow: hidden;
+    background-color: #dff1f1;
 }
 
 #phrase-input-container {
@@ -17,7 +16,7 @@ body {
 }
 
 #phrase-input-container:focus-within {
-    outline: 2px solid black; 
+    outline: 2px solid black;
 }
 
 #phrase-input {
@@ -35,7 +34,6 @@ body {
 
 #merge-button {
     margin-top: 20px;
-    margin-left: 10px;
     padding: 5px 10px;
     border-radius: 10px;
     height: 70px;
@@ -72,7 +70,7 @@ body {
     padding-left: 3px;
 }
 
-#merged-phrase{
+#merged-phrase {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,28 +87,30 @@ body {
     width: 270px;
     height: 400px;
     border-radius: 10px;
-    overflow: auto; 
+    overflow: auto;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
 .phrases-container::-webkit-scrollbar {
-    width: 10px; 
-    height: 10px; 
+    width: 10px;
+    height: 10px;
 }
 
 .phrases-container::-webkit-scrollbar-track {
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .phrases-container::-webkit-scrollbar-thumb {
-    background-color: #888; 
+    background-color: #888;
     border-radius: 4px;
 }
 
-
+.phrases-container::-webkit-scrollbar-thumb:horizontal {
+    background-color: #888;
+}
 
 #phrase-list li:hover {
     border-radius: 5px;
@@ -118,7 +118,76 @@ h3{
     background-color: rgba(206, 206, 206, 0.686)
 }
 
-img{
-    height: 100%;
+#divContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 9999;
+    background-color: #dff1f1;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.coloredDiv {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+}
+
+div p {
+    margin: 0;
+}
+
+#showDivsButton {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    height: 70px;
+    font-size: 15px;
+    background-color: rgb(255, 0, 191);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+#closeButton {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    height: 70px;
+    font-size: 15px;
+    background-color: #da4c21;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px 20px 20px 20px;
+}
+
+button:hover {
+    opacity: 90%;
+}
+
