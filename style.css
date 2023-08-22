@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #dff1f1;
+    background-color: #c9f3f3;
 }
 
 #phrase-input-container {
@@ -130,7 +130,7 @@ h3 {
     align-items: center;
     padding: 20px;
     z-index: 9999;
-    background-color: #dff1f1;
+    background-color: #c9f3f3;
 }
 
 .grid-container {
@@ -142,7 +142,7 @@ h3 {
     padding: 10px;
 }
 
-.coloredDiv {
+.tuto-container {
     width: 300px;
     height: 200px;
     border-radius: 15px;
@@ -190,4 +190,3 @@ div p {
 button:hover {
     opacity: 90%;
 }
-

@@ -1,1 +1,1 @@
-(No esta terminada)
+Lo almacenado en el php es global, pero lo que uno puede ver en su web es dependiendo en que dispositivo este, es decir, cada base de datos que se ve en el front end es unica
