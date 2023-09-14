@@ -3,9 +3,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $phrase = $_POST["phrase"];
 
   $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "wenas";
+  $username = "phpmyadmin";
+  $password = "RedesInformaticas";
+  $dbname = "db_tuzzio";
 
   $conn = new mysqli($servername, $username, $password, $dbname);
 

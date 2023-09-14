@@ -4,9 +4,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $isRandom = $_POST["isRandom"];
 
   $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "wenas";
+  $username = "phpmyadmin";
+  $password = "RedesInformaticas";
+  $dbname = "db_tuzzio";
 
   $conn = new mysqli($servername, $username, $password, $dbname);
 
